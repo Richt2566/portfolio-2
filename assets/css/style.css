@@ -59,22 +59,23 @@ li a {
   display: none;
 }
 
+.left-side, .right-side {
+  display: inline-block;
+}
+
+.development-area {
+}
+
 #projects {
+  position: absolute;
   color: white;
   font-size: 40px;
-
+  top: 35;
+  left: 90;
 }
 
-.dev-img-1 {
-  width: 300px;
-  height: 300px;
-  background-color: #2B2B2A;
-}
-
-.dev-img-3 {
-  width: 300px;
-  height: 300px;
-  background-color: #181717;
+.dev-li a:hover {
+  color: white;
 }
 
 #development {
@@ -83,10 +84,24 @@ li a {
   padding: 5px 10px;
 }
 
-div.dev-group {
+.dev-group {
+  text-align: right;
   display: inline-block;
-  position: relative;
-  right: -90;
+  width: 710px;
+  height: 710px;
+}
+
+.chicago-desc, .game-desc, .ondeck-desc, .death-desc {
+  display: none;
+}
+
+.chicago-desc, .game-desc, .ondeck-desc, .death-desc {
+  width: 200px;
+  height: 200px;
+}
+
+#about {
+  clear: both;
 }
 
 /* -------------------------------------------- CONTACT PAGE 

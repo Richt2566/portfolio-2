@@ -12,18 +12,18 @@ $('a[href^="#"]').on('click', function(event) {
 });
 
 $("#projectchi").on("click", function(){
-	$(".chicago-desc").fadeToggle(1000);
+	$(".chicago-desc").fadeToggle(800);
 })
 
 $("#projectgame").on("click", function(){
-	$(".game-desc").fadeToggle(1000);
+	$(".game-desc").fadeToggle(800);
 })
 
 $("#projectondeck").on("click", function(){
-	$(".ondeck-desc").fadeToggle(1000);
+	$(".ondeck-desc").fadeToggle(800);
 })
 
 $("#projectdeath").on("click", function(){
-	$(".death-desc").fadeToggle(1000);
+	$(".death-desc").fadeToggle(800);
 })
 

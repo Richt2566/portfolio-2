@@ -77,7 +77,7 @@ li a {
 }
 
 #projects {
-  color: white;
+  color: black;
   font-family: 'Anton', sans-serif;
   font-size: 90px;
   /*left: 16px;*/
@@ -182,12 +182,10 @@ li.dev-li {
 
 
 
-/* needs description */
+/* this is for 700 and below */
 @media only screen and (max-width: 700px){
-    .logo-responsive {
-      width: 70px;
-      padding-left: 10px;
-    }
+  .chone-front {
+  }
 
     .responsive {
         width: 49.99999%;
@@ -201,9 +199,29 @@ li.dev-li {
     }
 }
 
-/* needs description */
-@media only screen and (max-width: 550px){
+/* this is for the skinniest 
+the browser will let you minimize */
 
+@media only screen and (max-width: 530px){
+  .nav-links {
+    top: 200px;
+    left: 0px;
+    color: white;
+  }
+
+  li a {
+    color: white;
+    padding: 5px;
+  }
+}
+
+/* this is for a little bit bigger
+ than the above */
+
+@media only screen and (max-width: 550px){
+  .chone-front {
+    color: white;
+  }
   .chone-responsive {
       font-size: 80px;
       margin: 5px;
@@ -231,7 +249,7 @@ li.dev-li {
 
 }
 
-/* needs description */
+/* this is 890 and above */
 @media only screen and (min-width: 890px){
     .chone-responsive {
       margin-left: 30px;
@@ -248,7 +266,7 @@ li.dev-li {
 
 }
 
-/* needs description */
+/* I'm not sure i need this */
 @media only screen and (min-width: 400px){
   .chone-responsive {
       font-size: 90px;
@@ -258,5 +276,91 @@ li.dev-li {
   }
 }
 
+/*      */
+
+.follow-me {
+  margin-right: 300px;
+  display: inline;
+}
+
+.form-container {
+  width: 500px;
+}
+
+// Colors
+$green: #84AD47;
+$red: #AD4747;
+$blue: #4784AD;
+
+form {
+  width: 50%;
+  margin: 10% auto;
+  min-width: 9rem;
+}
+  
+input, textarea {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: darken(#f9f9f9, 10%);
+  color: darken(#f9f9f9, 50%);
+  
+  &[type=submit] {
+    background: $green;
+    color: #fff;
+    width: auto;
+    float: right;
+  }
+
+  &::placeholder {
+    color: darken(#f9f9f9, 50%);
+  }
+
+  &.error {
+    background: $red;
+    color: #fff;
+    &::placeholder {
+      color: darken($red, 60%);
+    }
+  }
+}
+textarea {
+  height: 10rem;
+}
+.captcha {
+  float:left;
+  input {
+    float: right;
+  }
+  input[name=question] {
+    width: 4rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    text-align: right;
+    padding-right: 0;
+  }
+  [name=captcha] {
+    width: 5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 0.5rem;
+    &::placeholder {
+      text-align: center;
+    }
+  }
+}
+
+// Generic Styles ;)
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
 
 

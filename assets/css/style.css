@@ -1,4 +1,4 @@
-/* -----------------------------------------------INDEX PAGE */
+/* ------------------------------------------INDEX PAGE */
 
 #container {
   position: relative;
@@ -60,27 +60,20 @@ li a {
   display: none;
 }
 
-/*.left-side, .right-side {
-  display: inline-block;
-}*/
-
+/*------------------------------------------PROJECTS */
 .development-area {
   position: relative;
   display: flex;
   flex-direction: row;
-  /*width: 1100px;*/
   margin: 0;
   width: 100%;
   height: 720px;
-  /*border: 2px solid blue;*/
-
 }
 
 #projects {
   color: black;
   font-family: 'Anton', sans-serif;
   font-size: 90px;
-  /*left: 16px;*/
   margin-left: 25px;
 }
 
@@ -103,13 +96,10 @@ li.dev-li {
 }
 
 .dev-group {
-  /*text-align: right;*/
   display: inline-block;
   width: 710px;
   height: 710px;
 }
-
-
 
 .chicago-desc, .game-desc, .ondeck-desc, .death-desc {
   display: none;
@@ -123,13 +113,9 @@ li.dev-li {
   font-size: 18px;
 }
 
-.chicago-desc, .death-desc {
+.chicago-desc, .death-desc, .game-desc, .ondeck-desc {
   height: 90px;
   font-family: 'Inconsolata', monospace;
-}
-
-.game-desc, .ondeck-desc {
-  height: 45px;
 }
 
 .dev-group img {
@@ -157,11 +143,8 @@ li.dev-li {
   bottom: 0;
   left: 0;
   right: 0;
-  /*height: 100%;*/
-  /*width: 100%;*/
   opacity: 0;
   transition: .5s ease;
-  /*background-color: #008CBA;*/
 }
 
 .img-01:hover .overlay {
@@ -180,37 +163,28 @@ li.dev-li {
   opacity: 1;
 }
 
-
 .text {
   color: white;
   font-size: 20px;
   position: absolute;
   top: 0%;
   left: 10%;
-  /*transform: translate(-50%, -50%);*/
-  /*-ms-transform: translate(-50%, -50%);*/
   text-align: center;
   font-family: 'Inconsolata', monospace;
 }
 
-/* -------------------------------------------- ABOUT PAGE */
+/* ----------------------------------------- ABOUT PAGE */
 
 .about-area {
   width: 100%;
   height: 720px;
-  /*border: 2px solid blue; */
-  /*background: back01.jpg");*/
 }
 
 #about {
-  /*padding: 0px;*/
-  /*display: inline;*/
-  /*clear: both;*/
   color: black;
   font-family: 'Anton', sans-serif;
   font-size: 90px;
   margin-left: 1200px;
-
 }
 
 .rich {
@@ -229,10 +203,10 @@ li.dev-li {
   margin-left: 350px;
 }
 
+/*--------------------------------------------CONTACT*/
 .contact-area {
   width: 100%;
-  height: 720px;
-  /*border: 2px solid blue;*/
+  height: 700px;
 }
 
 #contact {
@@ -244,18 +218,17 @@ li.dev-li {
 }
 
 .follow-me {
-  display: inline-block;
+  /*display: inline-block;*/
   width: 100%;
   margin-left: 500px;
+  margin-right: 300px;
+  display: inline;
 }
 
 .form-container {
-  /*display: inline;*/
   margin-left: 460px;
-
+  width: 500px;
 }
-
-/* -------------------------------------------- CONTACT PAGE 
 
 /* this is for 700 and below */
 @media only screen and (max-width: 700px){
@@ -351,17 +324,6 @@ the browser will let you minimize */
   }
 }
 
-/*      */
-
-.follow-me {
-  margin-right: 300px;
-  display: inline;
-}
-
-.form-container {
-  width: 500px;
-}
-
 // Colors
 $green: #84AD47;
 $red: #AD4747;
@@ -429,7 +391,7 @@ textarea {
   }
 }
 
-// Generic Styles ;)
+// Generic Styles
 
 @font-face {
   font-family: 'Open Sans';

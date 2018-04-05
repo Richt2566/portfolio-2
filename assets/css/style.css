@@ -91,10 +91,7 @@ li.dev-li {
 
 .dev-li {
   margin-right: 530px;
-}
-
-.left-side {
-
+  font-family: 'Inconsolata', monospace;
 }
 
 .dev-li a:hover {
@@ -112,6 +109,29 @@ li.dev-li {
   height: 710px;
 }
 
+
+
+.chicago-desc, .game-desc, .ondeck-desc, .death-desc {
+  display: none;
+  width: 600px;
+  padding: 5px;
+  margin: 10px;
+  margin-left: 40px;
+  clear: left;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  font-size: 18px;
+}
+
+.chicago-desc, .death-desc {
+  height: 90px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.game-desc, .ondeck-desc {
+  height: 45px;
+}
+
 .dev-group img {
   filter: gray;
   -webkit-filter: grayscale(1);
@@ -124,30 +144,68 @@ li.dev-li {
   -webkit-transform: scale(1.00);
 }
 
-.chicago-desc, .game-desc, .ondeck-desc, .death-desc {
-  display: none;
-  padding: 20px;
-  margin-left: 80px;
-  clear: left;
+.img-01, .img-02, .img-03, .img-04 {
+  display: inline;
+  position: relative;
+  width: 350px;
+  height: 350px;
 }
 
-.chicago-desc, .death-desc {
-  width: 500px;
-  height: 90px;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*height: 100%;*/
+  /*width: 100%;*/
+  opacity: 0;
+  transition: .5s ease;
+  /*background-color: #008CBA;*/
+}
+
+.img-01:hover .overlay {
+  opacity: 1;
+}
+
+.img-02:hover .overlay {
+  opacity: 1;
+}
+
+.img-03:hover .overlay {
+  opacity: 1;
+}
+
+.img-04:hover .overlay {
+  opacity: 1;
+}
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  /*transform: translate(-50%, -50%);*/
+  /*-ms-transform: translate(-50%, -50%);*/
   text-align: center;
+  font-family: 'Inconsolata', monospace;
 }
 
-.game-desc, .ondeck-desc {
-  width: 500px;
-  height: 30px;
-  text-align: center; 
-}
 /* -------------------------------------------- ABOUT PAGE */
 
+.about-area {
+  width: 100%;
+  height: 720px;
+  /*border: 2px solid blue; */
+  /*background: back01.jpg");*/
+}
+
 #about {
-  padding: 0px;
-  display: inline;
-  clear: both;
+  /*padding: 0px;*/
+  /*display: inline;*/
+  /*clear: both;*/
   color: black;
   font-family: 'Anton', sans-serif;
   font-size: 90px;
@@ -164,10 +222,17 @@ li.dev-li {
 .rich-desc {
   margin-left: 350px;
   padding: 90px;
+  font-family: 'Inconsolata', monospace;
 }
 
 .skills {
   margin-left: 350px;
+}
+
+.contact-area {
+  width: 100%;
+  height: 720px;
+  /*border: 2px solid blue;*/
 }
 
 #contact {
@@ -175,12 +240,9 @@ li.dev-li {
   color: black;
   font-family: 'Anton', sans-serif;
   font-size: 90px;
-
 }
 
 /* -------------------------------------------- CONTACT PAGE 
-
-
 
 /* this is for 700 and below */
 @media only screen and (max-width: 700px){

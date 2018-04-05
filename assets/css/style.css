@@ -240,6 +240,19 @@ li.dev-li {
   color: black;
   font-family: 'Anton', sans-serif;
   font-size: 90px;
+  margin-left: 25px;
+}
+
+.follow-me {
+  display: inline-block;
+  width: 100%;
+  margin-left: 500px;
+}
+
+.form-container {
+  /*display: inline;*/
+  margin-left: 460px;
+
 }
 
 /* -------------------------------------------- CONTACT PAGE 

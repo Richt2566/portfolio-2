@@ -22,6 +22,7 @@ a {
 	display: inline-block;
   top: 8px;
   left: 16px;
+  color: white;
 }
 
 .nav-links {
@@ -32,12 +33,14 @@ a {
     overflow: hidden;
     top: 100px;
     left: 16px;
+    color: white;
 }
 
 .nav-links li {
     margin-left: 25px;
     display: inline-block;
     font-size: 20px;
+    color: white;
 }
 
 li a {
@@ -48,7 +51,6 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: black;
 
 }
 
@@ -260,7 +262,8 @@ the browser will let you minimize */
   
   .chone-front {
     color: white;
-    text-align: center;
+    margin: 0px;
+    padding: 0px;
   }
 
   .nav-links {
@@ -277,8 +280,7 @@ the browser will let you minimize */
   }
 
   .development-area {
-    height: 400px;
-
+    height: 900px;
   }
 
   .dev-li {
@@ -287,40 +289,72 @@ the browser will let you minimize */
   }
   
   .left-side {
-    display: block;
-    width: 100%;
+    width: 400px;
+    font-size: 40px;
+    text-align: center;
   }
-  .right-side {
-    display: block;
-    width: 100%;
-    margin: 0;
+
+  .chicago-desc, .game-desc, .ondeck-desc, .death-desc {
+    margin: 0px;
+    padding: 50px;
+    width: 300px;
   }
 
   .img-01, .img-02, .img-03, .img-04 {
-    display: block;
-    position: relative;
-    width: 350px;
-    height: 350px;
+    display: none;
+  }
+
+  .right-side {
+    display: none;
+  }
+
+  .about-area {
+    clear: both;
   }
 
   #about {
-    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 90px;
   }
 
   .about-area {
     height: 1100px;
   }
 
+  .rich-container {
+    margin-left: 0px;
+    padding: 0px;
+  }
+
   .rich-desc {
-    margin: 0;
+    margin: 0px;
+    padding: 40px;
+    width: 300px;
+    text-align: center;
   }
 
   .skills {
     margin: 0;
+    text-align: left;
   }
 
   #contact {
-    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 50px;
+  }
+
+  .follow-me {
+    margin: 0px;
+    padding: 20px;
+    width: 50px;
+  }
+
+  .form-container {
+    margin: 0px;
+    padding: 20px;
+    width: 300px;
   }
 
 }
